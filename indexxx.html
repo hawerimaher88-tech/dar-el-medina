@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dar El Medina – Restaurant traditionnel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Partie 01 : navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#accueil"><i class="bi bi-shop me-2"></i>Dar El Medina</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+              aria-controls="navPrincipal" aria-expanded="false" aria-label="Afficher le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn btn-warning ms-auto" data-bs-toggle="modal" data-bs-target="#modalReservation">Réserver</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="alert alert-info alert-dismissible fade show mb-0 rounded-0" role="alert">
+    <span class="badge text-bg-danger me-2">Nouveau</span>Réservez votre table en ligne !
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fermer"></button>
+  </div>
+
+  <!-- Partie 02 : jumbotron -->
+  <section id="accueil" class="hero p-5 text-white rounded-3 d-flex align-items-center text-center">
+    <div class="container-fluid py-5">
+      <h1 class="display-3 fw-bold">Bienvenue chez Dar El Medina</h1>
+      <p class="col-md-8 mx-auto fs-4">Cuisine tunisienne traditionnelle, préparée chaque jour dans l'esprit de la médina.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="#menu" class="btn btn-primary btn-lg">Découvrir le menu</a>
+        <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalReservation">Réserver une table</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partie 03 / 06 : menu -->
+  <section id="menu" class="container py-5">
+    <h2 class="mb-4">Notre menu</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col">
+     <div class="card h-100">
+      <img
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Tunisian_couscous_with_fish_and_vegetables.JPG"
+class="card-img-top" alt="Couscous au poisson">
+      <div class="card-body"><h5 class="card-title">Couscous au poisson</h5><p class="card-text">Semoule fine, mérou et légumes de saison.</p></div>
+      <div class="card-body pt-2 flex-grow-0"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPlat1">Voir le détail</button></div>
+      <div class="card-footer d-flex justify-content-between align-items-center"><span>28 DT</span><span class="badge text-bg-success">Nouveau</span></div>
+     </div>
+    </div>
+    <div class="col">
+     <div class="card h-100">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Fried_brik.jpg" class="card-img-top" alt="Brik à l'œuf">
+      <div class="card-body"><h5 class="card-title">Brik à l&#x27;œuf</h5><p class="card-text">Feuille de malsouka croustillante, œuf et thon.</p></div>
+      <div class="card-body pt-2 flex-grow-0"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPlat2">Voir le détail</button></div>
+      <div class="card-footer d-flex justify-content-between align-items-center"><span>6 DT</span></div>
+     </div>
+    </div>
+    <div class="col">
+     <div class="card h-100">
+      <img
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tunisian_Ojja.jpg/960px-Tunisian_Ojja.jpg" class="card-img-top" alt="Ojja merguez">
+      <div class="card-body"><h5 class="card-title">Ojja merguez</h5><p class="card-text">Merguez, œufs et sauce tomate épicée à la harissa, servis avec du pain.</p></div>
+      <div class="card-body pt-2 flex-grow-0"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPlat3">Voir le détail</button></div>
+      <div class="card-footer d-flex justify-content-between align-items-center"><span>15 DT</span></div>
+     </div>
+    </div>
+    <div class="col">
+     <div class="card h-100">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lablebi_Tunisian_dish.jpg/960px-Lablebi_Tunisian_dish.jpg" class="card-img-top" alt="Lablabi">
+      <div class="card-body"><h5 class="card-title">Lablabi</h5><p class="card-text">Soupe de pois chiches, pain rassis, cumin et œuf.</p></div>
+      <div class="card-body pt-2 flex-grow-0"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPlat4">Voir le détail</button></div>
+      <div class="card-footer d-flex justify-content-between align-items-center"><span>8 DT</span><span class="badge text-bg-success">Nouveau</span></div>
+     </div>
+    </div>
+    <div class="col">
+     <div class="card h-100">
+      <img src="https://picsum.photos/seed/makroudh/600/400" class="card-img-top" alt="Makroudh">
+      <div class="card-body"><h5 class="card-title">Makroudh</h5><p class="card-text">Pâtisserie de semoule fourrée aux dattes et trempée dans le miel.</p></div>
+      <div class="card-body pt-2 flex-grow-0"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPlat5">Voir le détail</button></div>
+      <div class="card-footer d-flex justify-content-between align-items-center"><span>4 DT</span></div>
+     </div>
+    </div>
+    <div class="col">
+     <div class="card h-100">
+      <div class="card-header">Boisson</div>
+      <img src="https://picsum.photos/seed/the/600/400" class="card-img-top" alt="Thé à la menthe">
+      <div class="card-body pb-0"><h5 class="card-title">Thé à la menthe</h5></div>
+      <ul class="list-group list-group-flush"><li class="list-group-item">Thé vert</li><li class="list-group-item">Menthe fraîche</li><li class="list-group-item">Pignons</li></ul>
+      <div class="card-body pt-2 flex-grow-0"><button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalPlat6">Voir le détail</button></div>
+      <div class="card-footer d-flex justify-content-between align-items-center"><span>3 DT</span></div>
+     </div>
+    </div>
+    </div>
+
+    <div class="card text-bg-warning mt-5 mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://picsum.photos/seed/platdujour/600/400" class="img-fluid rounded-start h-100 object-fit-cover" alt="Plat du jour : tajine tunisien">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title h4">Plat du jour</h3>
+            <p class="card-text">Tajine tunisien au poulet, fromage et persil, servi avec une salade mechouia.</p>
+            <p class="card-text fw-bold">18 DT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partie 04 : galerie -->
+  <section id="galerie" class="bg-body-tertiary py-5">
+    <div class="container">
+      <h2 class="mb-4">Galerie</h2>
+      <div id="carouselGalerie" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="3" aria-label="Diapositive 4"></button>
+        </div>
+        <div class="carousel-inner rounded-3">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/salle/1200/500" class="d-block w-100" alt="La salle du restaurant">
+            <div class="carousel-caption d-none d-md-block"><h5>La salle</h5><p>Un décor de médina chaleureux.</p></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/terrasse/1200/500" class="d-block w-100" alt="La terrasse ombragée">
+            <div class="carousel-caption d-none d-md-block"><h5>La terrasse</h5><p>Déjeuner à l'ombre du jasmin.</p></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/cuisine/1200/500" class="d-block w-100" alt="La cuisine ouverte">
+            <div class="carousel-caption d-none d-md-block"><h5>La cuisine</h5><p>Des recettes transmises en famille.</p></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/desserts/1200/500" class="d-block w-100" alt="Assortiment de desserts">
+            <div class="carousel-caption d-none d-md-block"><h5>Les desserts</h5><p>Makroudh, baklawa et thé à la menthe.</p></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalerie" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGalerie" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partie 07 : contact -->
+  <section id="contact" class="container py-5">
+    <h2 class="mb-4">Contact</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col"><div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+        <i class="bi bi-geo-alt fs-1"></i><div><h3 class="h5">Adresse</h3><p class="mb-0">12 rue Jemaa Zitouna, Médina de Tunis</p></div></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+        <i class="bi bi-telephone fs-1"></i><div><h3 class="h5">Téléphone</h3><p class="mb-0">+216 71 000 000</p></div></div></div></div>
+      <div class="col"><div class="card h-100"><div class="card-body d-flex align-items-center gap-3">
+        <i class="bi bi-clock fs-1"></i><div><h3 class="h5">Horaires</h3><p class="mb-0">Tous les jours, 11h30 – 23h</p></div></div></div></div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Dar El Medina</span>
+      <div class="fs-4 d-flex gap-3">
+        <a class="text-white" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a class="text-white" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a class="text-white" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Partie 05 : modales -->
+  <div class="modal fade" id="modalReservation" tabindex="-1" aria-labelledby="titreReservation" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="titreReservation">Réserver une table</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formReservation" class="row g-3">
+            <div class="col-12"><label for="nom" class="form-label">Nom</label><input type="text" class="form-control" id="nom" required></div>
+            <div class="col-12"><label for="tel" class="form-label">Téléphone</label><input type="tel" class="form-control" id="tel" required></div>
+            <div class="col-6"><label for="date" class="form-label">Date</label><input type="date" class="form-control" id="date" required></div>
+            <div class="col-6"><label for="heure" class="form-label">Heure</label><input type="time" class="form-control" id="heure" required></div>
+            <div class="col-12"><label for="personnes" class="form-label">Nombre de personnes</label>
+              <select class="form-select" id="personnes">
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+              </select></div>
+            <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="terrasse"><label class="form-check-label" for="terrasse">Terrasse</label></div></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="submit" class="btn btn-primary" form="formReservation">Confirmer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPlat1" tabindex="-1" aria-labelledby="titrePlat1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="titrePlat1">Couscous au poisson</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button></div>
+      <div class="modal-body"><img class="img-fluid rounded mb-3 w-100" <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Tunisian_couscous_with_fish_and_vegetables.JPG"
+     class="card-img-top"
+     alt="Couscous au poisson"><p>Semoule fine, mérou et légumes de saison.</p><p class="fw-bold fs-5 mb-0">28 DT</p></div>
+    </div></div>
+  </div>
+  <div class="modal fade" id="modalPlat2" tabindex="-1" aria-labelledby="titrePlat2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="titrePlat2">Brik à l&#x27;œuf</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button></div>
+      <div class="modal-body"><img class="img-fluid rounded mb-3 w-100" <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Fried_brik.jpg" class="card-img-top" alt="Brik à l'œuf"><p>Feuille de malsouka croustillante, œuf et thon.</p><p class="fw-bold fs-5 mb-0">6 DT</p></div>
+    </div></div>
+  </div>
+  <div class="modal fade" id="modalPlat3" tabindex="-1" aria-labelledby="titrePlat3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="titrePlat3">Ojja merguez</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button></div>
+      <div class="modal-body"><img class="img-fluid rounded mb-3 w-100" <img src="htts://pload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tunisian_Ojja.jpg/960px-Tunisian_Ojja.jpg" class="card-img-top" alt="Ojja merguez"><p>Merguez, œufs et sauce tomate épicée à la harissa, servis avec du pain.</p><p class="fw-bold fs-5 mb-0">15 DT</p></div>
+    </div></div>
+  </div>
+  <div class="modal fade" id="modalPlat4" tabindex="-1" aria-labelledby="titrePlat4" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="titrePlat4">Lablabi</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button></div>
+      <div class="modal-body"><img class="img-fluid rounded mb-3 w-100" <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lablebi_Tunisian_dish.jpg/960px-Lablebi_Tunisian_dish.jpg" class="card-img-top" alt="Lablabi"><p>Soupe de pois chiches, pain rassis, cumin et œuf.</p><p class="fw-bold fs-5 mb-0">8 DT</p></div>
+    </div></div>
+  </div>
+  <div class="modal fade" id="modalPlat5" tabindex="-1" aria-labelledby="titrePlat5" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="titrePlat5">Makroudh</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button></div>
+      <div class="modal-body"><img class="img-fluid rounded mb-3 w-100" src="https://picsum.photos/seed/makroudh/600/400" alt="Makroudh"><p>Pâtisserie de semoule fourrée aux dattes et trempée dans le miel.</p><p class="fw-bold fs-5 mb-0">4 DT</p></div>
+    </div></div>
+  </div>
+  <div class="modal fade" id="modalPlat6" tabindex="-1" aria-labelledby="titrePlat6" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="titrePlat6">Thé à la menthe</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button></div>
+      <div class="modal-body"><img class="img-fluid rounded mb-3 w-100" src="https://picsum.photos/seed/the/600/400" alt="Thé à la menthe"><p>Thé vert à la menthe fraîche et aux pignons.</p><p class="fw-bold fs-5 mb-0">3 DT</p></div>
+    </div></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
